@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>User Dashboard - ReWear</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+
+    .profile-box {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    }
+
+    .section-title {
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+
+    .points-balance {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .uploaded-item-card img {
+      height: 150px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <!-- Inside your navbar (already exists in dashboard.html) -->
+<nav class="navbar navbar-light bg-light px-4">
+  <a class="navbar-brand fw-bold" href="index.html">👕 ReWear</a>
+  <div>
+        <a href="home.html" class="btn btn-outline-secondary"> Home</a>
+
+    <a href="add-item.html" class="btn btn-success me-2">+ Add Item</a>
+  </div>
+</nav>
+
+
+  <!-- Container -->
+  <div class="container my-4">
+
+    <!-- Profile + Points -->
+    <div class="row g-4">
+
+      <!-- Profile Info -->
+      <div class="col-md-6">
+        <div class="profile-box">
+          <img src="https://images.unsplash.com/photo-1578924106991-c64a376692c3?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="User Photo"
+     class="rounded-circle me-3 shadow"
+     width="80" height="80"
+     style="border: 2px solid #ddd;" />
+
+          <p><strong>Name:</strong> Priya Sharma</p>
+          <p><strong>Email:</strong> priya@example.com</p>
+          <p><strong>Member since:</strong> Jan 2024</p>
+        </div>
+      </div>
+
+      <!-- Points Balance -->
+      <div class="col-md-6">
+        <div class="profile-box text-center">
+          <h5>Points Balance</h5>
+          <div class="points-balance text-success">120 Pts</div>
+          <p class="text-muted">Use your points to swap for new styles!</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Uploaded Items Overview -->
+    <div class="section-title">
+      <h4>📦 Uploaded Items Overview</h4>
+    </div>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="profile-box">
+          <h6>Total Uploaded</h6>
+          <div class="fs-4 fw-bold">10</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="profile-box">
+          <h6>Approved</h6>
+          <div class="fs-4 fw-bold text-success">8</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="profile-box">
+          <h6>Pending</h6>
+          <div class="fs-4 fw-bold text-warning">2</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Ongoing Swaps -->
+    <div class="section-title">
+      <h4>🔄 Ongoing Swaps</h4>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card uploaded-item-card">
+          <img src="https://images.unsplash.com/photo-1638417286482-9a9389ee6dd4?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Ongoing Item">
+          <div class="card-body">
+            <h5 class="card-title">Blue Hoodie</h5>
+            <p>Status: <span class="text-info">Awaiting delivery</span></p>
+          </div>
+        </div>
+      </div>
+        <div class="col-md-4">
+    <div class="card uploaded-item-card">
+      <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Ongoing Item">
+      <div class="card-body">
+        <h5 class="card-title">Saree</h5>
+        <p>Status: <span class="text-info">In Transit</span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+    <div class="col-md-4">
+    <div class="card uploaded-item-card">
+      <img src="https://plus.unsplash.com/premium_photo-1674828601362-afb73c907ebe?q=80&w=753&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Ongoing Item">
+      <div class="card-body">
+        <h5 class="card-title">Vintage Pants</h5>
+        <p>Status: <span class="text-info">In Transit</span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="col-md-4">
+    <div class="card uploaded-item-card">
+      <img src="https://images.unsplash.com/photo-1631541909061-71e349d1f203?q=80&w=705&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Ongoing Item">
+      <div class="card-body">
+        <h5 class="card-title">Sweater</h5>
+        <p>Status: <span class="text-info">Swap Requested</span></p>
+      </div>
+    </div>
+  </div>
+    <div class="col-md-4">
+    <div class="card uploaded-item-card">
+      <img src="https://plus.unsplash.com/premium_photo-1671198905435-20f8d166efb2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Ongoing Item">
+      <div class="card-body">
+        <h5 class="card-title">Vintage Shirt</h5>
+        <p>Status: <span class="text-info">In Transit</span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="col-md-4">
+    <div class="card uploaded-item-card">
+      <img src="https://images.unsplash.com/photo-1603855474987-80d6649d9a08?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Ongoing Item">
+      <div class="card-body">
+        <h5 class="card-title">Frock</h5>
+        <p>Status: <span class="text-info">Swap Requested</span></p>
+      </div>
+    </div>
+  </div>
+
+
+    </div>
+
+    <!-- Completed Swaps -->
+    <div class="section-title">
+      <h4>✅ Completed Swaps</h4>
+    </div>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card uploaded-item-card">
+          <img src="https://images.unsplash.com/photo-1729864210127-0c0dc835dd78?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Completed Item">
+          <div class="card-body">
+            <h5 class="card-title">Yellow T-shirt</h5>
+            <p>Status: <span class="text-success">Swapped successfully</span></p>
+          </div>
+        </div>
+      </div>
+      <!-- Add more completed items -->
+       <div class="col-md-4">
+    <div class="card uploaded-item-card">
+      <img src="https://images.unsplash.com/photo-1583140363491-6071000c8ed9?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Completed Item">
+      <div class="card-body">
+        <h5 class="card-title">White Gown</h5>
+        <p>Status: <span class="text-success">Delivered</span></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="col-md-4">
+    <div class="card uploaded-item-card">
+      <img src="https://plus.unsplash.com/premium_photo-1689977493146-ed929d07d97e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Completed Item">
+      <div class="card-body">
+        <h5 class="card-title">Formal Trousers</h5>
+        <p>Status: <span class="text-success">Swap Complete</span></p>
+      </div>
+    </div>
+  </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center mt-5 text-muted">
+    <p>© 2025 ReWear | Your Style, ReSwapped.</p>
+  </footer>
+
+</body>
+</html>

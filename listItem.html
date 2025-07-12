@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Browse Items - ReWear</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    .item-card img {
+      height: 250px;
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+
+    .item-card {
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    .owner-name {
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .price {
+      font-weight: bold;
+      color: #28a745;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm px-4">
+    <a class="navbar-brand fw-bold" href="home.html">👕 ReWear</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navMenu">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+        <li class="nav-item"><a class="nav-link" href="add-item.html">List Item</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Item Grid -->
+  <div class="container my-5">
+    <h2 class="mb-4 text-center">🛍️ Available Items</h2>
+
+    <div class="row g-4">
+
+      <!-- Item 1 -->
+      <div class="col-md-4">
+        <div class="card item-card">
+          <img src="https://images.unsplash.com/photo-1495105787522-5334e3ffa0ef?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Item Image" class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title">Denim Jacket</h5>
+            <p class="owner-name">By: Priya Sharma</p>
+            <p class="card-text">Category: Outerwear</p>
+            <p class="price">Points: 40</p>
+            <a href="item.html" class="btn btn-outline-primary btn-sm w-100">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="col-md-4">
+        <div class="card item-card">
+          <img src="https://images.unsplash.com/photo-1602010069450-0a62034f235c?q=80&w=737&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Item Image" class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title">Floral Dress</h5>
+            <p class="owner-name">By: Nisha Verma</p>
+            <p class="card-text">Category: Ethnic Wear</p>
+            <p class="price">Points: 25</p>
+            <a href="item2.html" class="btn btn-outline-primary btn-sm w-100">View Details</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="col-md-4">
+        <div class="card item-card">
+          <img src="https://plus.unsplash.com/premium_photo-1682435561654-20d84cef00eb?q=80&w=1018&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Item Image" class="card-img-top" />
+          <div class="card-body">
+            <h5 class="card-title">Sneakers</h5>
+            <p class="owner-name">By: Aman Patel</p>
+            <p class="card-text">Category: Footwear</p>
+            <p class="price">Points: 30</p>
+            <a href="item3.html" class="btn btn-outline-primary btn-sm w-100">View Details</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center mt-5 text-muted py-3 bg-light">
+    <p>© 2025 ReWear | Powered by Circular Fashion</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

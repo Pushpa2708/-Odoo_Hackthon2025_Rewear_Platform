@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Upload Your Item - ReWear</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .form-box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-light bg-white shadow-sm px-4">
+    <a class="navbar-brand fw-bold" href="index.html">👕 ReWear</a>
+    <a href="dashboard.html" class="btn btn-outline-dark">← Back to Dashboard</a>
+  </nav>
+
+  <div class="container my-5">
+    <div class="form-box">
+      <h2 class="mb-4 text-center">📤 Upload Your Item</h2>
+
+      <form>
+        <!-- Image Upload -->
+        <div class="mb-3">
+          <label for="itemImage" class="form-label">🖼️ Upload Image</label>
+          <input type="file" class="form-control" id="itemImage" required />
+        </div>
+
+        <!-- Item Name -->
+        <div class="mb-3">
+          <label for="itemName" class="form-label">🧥 Item Name</label>
+          <input type="text" class="form-control" id="itemName" placeholder="e.g., Blue Denim Jacket" required />
+        </div>
+
+        <!-- Category -->
+        <div class="mb-3">
+          <label for="itemCategory" class="form-label">🧵 Category</label>
+          <select class="form-select" id="itemCategory" required>
+            <option selected disabled>Choose Category</option>
+            <option>Shirt</option>
+            <option>Kurti</option>
+            <option>Saree</option>
+            <option>Dress</option>
+            <option>Shoes</option>
+            <option>Accessories</option>
+            <option>Others</option>
+          </select>
+        </div>
+
+        <!-- Size -->
+        <div class="mb-3">
+          <label for="itemSize" class="form-label">📏 Size</label>
+          <select class="form-select" id="itemSize" required>
+            <option selected disabled>Select Size</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+            <option>XL</option>
+            <option>Free Size</option>
+          </select>
+        </div>
+
+        <!-- Condition -->
+        <div class="mb-3">
+          <label for="itemCondition" class="form-label">🧼 Condition</label>
+          <select class="form-select" id="itemCondition" required>
+            <option selected disabled>Choose Condition</option>
+            <option>New</option>
+            <option>Gently Used</option>
+            <option>Worn</option>
+          </select>
+        </div>
+
+        <!-- Description -->
+        <div class="mb-3">
+          <label for="itemDescription" class="form-label">✍️ Description</label>
+          <textarea class="form-control" id="itemDescription" rows="3" placeholder="Add a short description..." required></textarea>
+        </div>
+
+        <!-- Points -->
+        <div class="mb-3">
+          <label for="itemPoints" class="form-label">💰 Points Value</label>
+          <input type="number" class="form-control" id="itemPoints" placeholder="e.g., 30" required />
+        </div>
+
+        <!-- Availability -->
+        <div class="form-check mb-3">
+          <input class="form-check-input" type="checkbox" id="itemAvailable" checked />
+          <label class="form-check-label" for="itemAvailable">📦 Available for Swap</label>
+        </div>
+
+        <!-- Submit -->
+        <div class="d-grid">
+          <button type="submit" class="btn btn-primary">🔁 List Item</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <footer class="text-center text-muted mt-5 mb-3">
+    <p>© 2025 ReWear | Join the fashion swap movement!</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
