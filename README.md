@@ -55,8 +55,7 @@ The platform aims to create a **community-powered wardrobe system** where people
 
 ## 🖼️ Live Demo
 
-🔗 GitHub Pages: **[https://Pushpa2708.github.io/re-wear-project/](https://yourusername.github.io/your-project-link/)**  
-
+🔗 GitHub Pages: **https://pushpa2708.github.io/-Odoo_Hackthon2025_Rewear_Platform/**
 
 ---
 
@@ -90,7 +89,7 @@ The platform aims to create a **community-powered wardrobe system** where people
 ---
 
 ## 🙋 About Me
-
+**Team:** DDU Team
 **Developer:** Pushpa  
 **Email:** p4383370@gmail.com  
 **Hackathon:** Odoo Hackathon 2025 – Student Track  
