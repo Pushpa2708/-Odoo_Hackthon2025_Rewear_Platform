@@ -56,7 +56,7 @@ The platform aims to create a **community-powered wardrobe system** where people
 ## 🖼️ Live Demo
 
 🔗 GitHub Pages: **[https://Pushpa2708.github.io/re-wear-project/](https://yourusername.github.io/your-project-link/)**  
-(*Replace this with your actual GitHub Pages link after deploying*)
+
 
 ---
 
